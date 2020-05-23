@@ -1,0 +1,398 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #1C2230;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 992px) {
+  html,
+  body {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 450px) {
+  html,
+  body {
+    font-size: 8px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: lightgray;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  color: #d3d3d3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+.custom-btn {
+  background-image: linear-gradient(45deg, #97f4ff, #22aad6);
+  color: white;
+  border-radius: 3rem;
+  border: none;
+  padding: .7rem 3.5rem;
+  transition: all 1s;
+  background-repeat: no-repeat;
+  background-color: #4bdbee;
+}
+
+.custom-btn:hover {
+  background-position: 15rem;
+  background-color: #4bdbee;
+  border-color: #4bdbee;
+}
+
+.custom-btn:focus {
+  box-shadow: none;
+}
+
+nav {
+  padding: 2rem 4rem;
+}
+
+@media (max-width: 576px) {
+  nav {
+    padding: 1rem 0rem;
+  }
+}
+
+nav .container {
+  display: flex;
+}
+
+nav .nav-logo img {
+  width: 75%;
+}
+
+@media (max-width: 576px) {
+  nav .nav-logo img {
+    width: 55%;
+  }
+}
+
+nav .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-links ul {
+  display: flex;
+}
+
+nav .nav-links ul li {
+  margin-right: 2rem;
+}
+
+nav .nav-links ul li a {
+  font-size: 1.2rem;
+  font-family: 'Raleway', sans-serif;
+  transition: all 0.5s;
+}
+
+header {
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+  background-image: url("../img/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom;
+}
+
+header .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header img {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+header .header h1 {
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+}
+
+header .header p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+#about {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #181F2B;
+}
+
+#about .first {
+  margin-bottom: 4rem;
+}
+
+#about .first .about-item {
+  margin-bottom: 3rem;
+}
+
+#about .first .about-item img {
+  margin-bottom: 2rem;
+  height: 4rem;
+}
+
+#about .first .about-item h3 {
+  font-size: 1.65rem;
+  margin-bottom: 1rem;
+}
+
+#about .first .about-item p {
+  padding: 0rem 2rem;
+}
+
+#about .last .last-img {
+  margin-bottom: 4rem;
+}
+
+#about .last .last-img img {
+  width: 100%;
+}
+
+#about .last .last-head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#about .last .last-head h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#about .last .last-head a {
+  color: #68DCDB;
+  border-bottom: 1px solid #68DCDB;
+  width: max-content;
+  padding-bottom: 0.1rem;
+  transition: all 0.5s;
+}
+
+#about .last .last-head a:hover {
+  color: #4db3b1;
+  border-bottom: 1px solid #4db3b1;
+}
+
+#testmonials {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  background-color: #181F2B;
+  background-image: url("../img/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-position: 3rem 5rem;
+}
+
+@media (max-width: 576px) {
+  #testmonials {
+    background-position: 3rem 7rem;
+  }
+}
+
+#testmonials .testms {
+  justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+  #testmonials .testms {
+    padding: 3rem;
+  }
+}
+
+#testmonials .testms .testm {
+  background-color: #21293C;
+  padding: 1.5rem 1rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  #testmonials .testms .testm {
+    flex: 0 0 32%;
+    max-width: 32%;
+  }
+}
+
+#testmonials .testms .testm .author {
+  display: flex;
+  margin-top: 2.5rem;
+}
+
+#testmonials .testms .testm .author img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+  margin-right: 1rem;
+}
+
+#testmonials .testms .testm .author h5 {
+  font-size: 0.8rem;
+}
+
+#testmonials .testms .testm .author h6 {
+  font-size: 0.5rem;
+}
+
+#testmonials .sign {
+  margin-top: 9rem;
+}
+
+@media (max-width: 576px) {
+  #testmonials .sign {
+    margin-top: 5rem;
+    padding: 3rem;
+  }
+}
+
+#testmonials .sign .email {
+  padding: 4rem 2rem;
+  background-color: #1C2230;
+  margin-bottom: -200px;
+  border-radius: 10px;
+}
+
+#testmonials .sign .email .inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+@media (max-width: 576px) {
+  #testmonials .sign .email .inputs {
+    flex-direction: column;
+  }
+}
+
+#testmonials .sign .email .inputs input {
+  width: 55%;
+  height: 2.5rem;
+  margin-right: 2rem;
+  border: none;
+  border-radius: 50px;
+}
+
+#testmonials .sign .email .inputs input::placeholder {
+  color: #a8a7a7;
+}
+
+@media (max-width: 576px) {
+  #testmonials .sign .email .inputs input {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+#testmonials .sign .email .inputs .custom-btn {
+  padding: .7rem 2rem;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 576px) {
+  #testmonials .sign .email .inputs .custom-btn {
+    width: 55%;
+  }
+}
+
+footer {
+  background-color: #0C1524;
+  padding-top: 250px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  footer .footer-logo {
+    margin-bottom: 3rem;
+    text-align: center;
+    padding: 1rem 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  footer .footer-logo {
+    padding: 1rem 2rem;
+  }
+}
+
+footer .footer-logo .logo img {
+  width: 9rem;
+  margin-bottom: 2rem;
+}
+
+footer .footer-logo .location {
+  display: flex;
+}
+
+footer .footer-logo .location img {
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  footer .footer-logo .location img {
+    margin-right: 0.5rem;
+  }
+}
+
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .contact .contact-item {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+footer .contact .contact-item img {
+  margin-right: 1rem;
+}
+
+footer .contact .social a {
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+/*# sourceMappingURL=main.css.map */
